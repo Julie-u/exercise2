@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/c4dd932847.js" crossorigin="anonymous"></script>
+    <title>Home page</title>
+  </head>
+
+
+  <body>
+
+  <main id="no-auth" class="main-body">
+    <nav class="nav">
+      <div class="nav-greeting">Anime Fav</div>
+      <a href="#" class="toggle" id="toggle-no-auth">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="nav-links" id="nav-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+      </div>
+    </nav>
+    <form action="" class="login">
+    <input type="text" id="email" placeholder="email" onkeyup="buttonSuccess()" />
+    <input type="password" id="password" placeholder="password" onkeyup="buttonSuccess()" />
+    <input type="image" name="submit" src="img/login.svg" value="Login" id="login" disabled class="login-button"/>
+    <p class="login-text">new user? <a href="register.html">register here</a></p>
+    </form>
+  </main>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+      apiKey: "AIzaSyA9DsQ6yqMbZTMDSF1hdNjwrjxF_KHQZKk",
+      authDomain: "exercise2hamid.firebaseapp.com",
+      projectId: "exercise2hamid",
+      storageBucket: "exercise2hamid.appspot.com",
+      messagingSenderId: "380947446522",
+      appId: "1:380947446522:web:ee974823794b45e2dc2743"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="./js/script.js">
+    </script>
+  </body>
+</html>
